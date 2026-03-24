@@ -6,6 +6,9 @@ server.get("/", (req, res) => {
   res.json({ name: "apple"})
 })
 
+server.get("/gello", (req, res) => {
+  res.json({ name: "banana"})
+})
 
 server.listen(port, () => {
   console.log('server started on ${port}')
